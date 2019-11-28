@@ -13,7 +13,7 @@ const client = new discord.Client();
 let guild;
 
 function newTopic(topicData) {
-	console.log(topicData);
+	console.log(JSON.stringify(topicData));
 
 	if (guild) {
 		const channel = guild.channels.get(process.env.announcements_channel_id)
